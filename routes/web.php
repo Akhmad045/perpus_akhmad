@@ -13,12 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('dashboard', function () {
     return view('dashboard');
 });
 Route::get('login',function (){
     return view('login');
 });
-Route::get('daftar',function(){
+Route::get('registrasi',function(){
     return view('register');
+});
+Route::get('peminjaman',function(){
+    return view('peminjaman');
 });
